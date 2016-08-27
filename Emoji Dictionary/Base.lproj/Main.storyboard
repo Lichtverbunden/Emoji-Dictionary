@@ -17,11 +17,62 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b6g-3Q-7sZ">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="b6g-3Q-7sZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gB0-0I-5CJ"/>
+                            <constraint firstItem="b6g-3Q-7sZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gCZ-rT-dGK"/>
+                            <constraint firstAttribute="trailing" secondItem="b6g-3Q-7sZ" secondAttribute="trailing" id="iP9-PA-xUk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="b6g-3Q-7sZ" secondAttribute="bottom" id="ljv-2h-dO7"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emojiTableView" destination="b6g-3Q-7sZ" id="ZYd-Vo-vAd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xon-1Y-fab">
+            <objects>
+                <viewController id="ycW-aW-b5F" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hnW-Vr-IP0"/>
+                        <viewControllerLayoutGuide type="bottom" id="esh-p1-fIC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c6R-fw-h5m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a lovely church." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMt-0a-teF">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QqG-ef-edF">
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lMt-0a-teF" firstAttribute="centerX" secondItem="c6R-fw-h5m" secondAttribute="centerX" id="HZ5-UI-Cbb"/>
+                            <constraint firstItem="QqG-ef-edF" firstAttribute="centerX" secondItem="c6R-fw-h5m" secondAttribute="centerX" id="T51-bO-5SR"/>
+                            <constraint firstItem="lMt-0a-teF" firstAttribute="top" secondItem="QqG-ef-edF" secondAttribute="bottom" constant="50" id="cDL-Em-i5I"/>
+                            <constraint firstItem="QqG-ef-edF" firstAttribute="top" secondItem="hnW-Vr-IP0" secondAttribute="bottom" constant="40" id="r2U-0C-lK5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bW3-Ot-5ux" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832.79999999999995" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
