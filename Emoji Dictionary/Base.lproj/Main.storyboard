@@ -57,21 +57,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d03-FB-oOt">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QqG-ef-edF">
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BirthYear: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGf-dg-DYz">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="cGf-dg-DYz" firstAttribute="top" secondItem="d03-FB-oOt" secondAttribute="bottom" constant="20" id="8Qz-HT-02r"/>
                             <constraint firstItem="lMt-0a-teF" firstAttribute="centerX" secondItem="c6R-fw-h5m" secondAttribute="centerX" id="HZ5-UI-Cbb"/>
+                            <constraint firstItem="d03-FB-oOt" firstAttribute="top" secondItem="lMt-0a-teF" secondAttribute="bottom" constant="20" id="NwJ-sT-r74"/>
+                            <constraint firstItem="d03-FB-oOt" firstAttribute="centerX" secondItem="c6R-fw-h5m" secondAttribute="centerX" id="RBh-b3-56H"/>
                             <constraint firstItem="QqG-ef-edF" firstAttribute="centerX" secondItem="c6R-fw-h5m" secondAttribute="centerX" id="T51-bO-5SR"/>
                             <constraint firstItem="lMt-0a-teF" firstAttribute="top" secondItem="QqG-ef-edF" secondAttribute="bottom" constant="50" id="cDL-Em-i5I"/>
                             <constraint firstItem="QqG-ef-edF" firstAttribute="top" secondItem="hnW-Vr-IP0" secondAttribute="bottom" constant="40" id="r2U-0C-lK5"/>
+                            <constraint firstItem="cGf-dg-DYz" firstAttribute="centerX" secondItem="c6R-fw-h5m" secondAttribute="centerX" id="tKl-zJ-VmM"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="categoryLabel" destination="d03-FB-oOt" id="RTu-Ey-DaR"/>
+                        <outlet property="dateLabel" destination="cGf-dg-DYz" id="Nje-D4-vFU"/>
                         <outlet property="definitionLabel" destination="lMt-0a-teF" id="z9l-SL-p69"/>
                         <outlet property="emojiLabel" destination="QqG-ef-edF" id="xuz-nA-oEY"/>
                     </connections>
